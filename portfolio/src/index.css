@@ -92,3 +92,7 @@ md:static md:flex md:items-center md:mt-0 md:opacity-100 md:blur-0 md:visible md
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.section{
+    @apply pt-20 lg:pt-32
+}
