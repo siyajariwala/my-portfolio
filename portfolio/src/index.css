@@ -100,3 +100,7 @@ md:static md:flex md:items-center md:mt-0 md:opacity-100 md:blur-0 md:visible md
 .headline-2{
     @apply text-3xl lg:text-4xl lg:leading-tight font-semibold
 }
+
+.title-1{
+    @apply text-[22px] font-normal
+ }
