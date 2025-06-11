@@ -6,7 +6,7 @@ ratings.fill({
     icon:'star',
     style:{fontVariationSettings: ' "FILL" 1' }
 });
-console.log(ratings);
+
 const ReviewCard = ({
     content,
     imgSrc,
