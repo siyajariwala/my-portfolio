@@ -9,7 +9,13 @@ export default {
     extend: {
       fontFamily:{
         'sans':['inter','sans-serif']
+      },
+      transformOrigin:{
+        'center':'center'
       }
+    },
+    rotate:{
+      'y-180':'rotateY(180deg)',
     },
   },
   plugins: [tailwindScrollbar],

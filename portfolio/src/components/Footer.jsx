@@ -23,32 +23,29 @@ const sitemap = [
   }
 ];
 
-const socials = [
+export const socials = [
   {
     label: 'GitHub',
-    href: 'https://www.github.com/codewithsadee-org'
+    href: 'https://github.com/siyajariwala'
   },
   {
     label: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/codewithsadee'
+    href: 'https://www.linkedin.com/in/siya-jariwala-890356252/'
   },
-  {
-    label: 'Twitter X',
-    href: 'https://x.com/codewithsadee_'
-  },
+
   {
     label: 'Instagram',
-    href: 'https://www.instagram.com/codewithsadee'
+    href: 'https://www.instagram.com/siya__jariwala'
   },
   {
-    label: 'CodePen',
-    href: 'https://codepen.io/codewithsadee'
+    label: 'Email',
+    href: 'mailto:siya.jari14@gmail.com'
   }
 ];
 const Footer = () => {
   return (
     <footer className="section">
-        <div className="container">
+        <div className="container max-w-7xl mx-auto">
             <div className="lg:grid lg:grid-cols-2">
 
                 <div className="mb-10">
@@ -66,14 +63,14 @@ const Footer = () => {
             <div className="grid grid-cols-2 gaps-4 lg:pl-20">
 
                 <div>
-                    <p className="mb-2 reveal-up">Sitemap</p>
+                    <p className="mb-2 reveal-up font-bold text-3xl">Sitemap</p>
 
                     <ul>
                         {sitemap.map(({label,href},key)=>(
                             <li key={key}>
                                 <a 
                                 href={href}
-                                 className="block text-sm text-zinc-400 py-1 transition-colors hover:text-zinc-200 reveal-up"
+                                 className="block text-sm text-slate-950 py-1 transition-colors hover:text-zinc-200 reveal-up"
                                  >
 {label}
                                  </a>
@@ -85,7 +82,7 @@ const Footer = () => {
 
 
                 <div>
-                    <p className="mb-2 reveal-up">Socials</p>
+                    <p className="mb-2 reveal-up font-bold text-3xl">Socials</p>
 
                     <ul>
                         {socials.map(({label,href},key)=>(
@@ -93,7 +90,7 @@ const Footer = () => {
                                 <a 
                                 href={href}
                                 target='_blank'
-                                 className="block text-sm text-zinc-400 py-1 transition-colors hover:text-zinc-200 reveal-up"
+                                 className="block text-sm text-slate-950 py-1 transition-colors hover:text-zinc-200 reveal-up"
                                  >
 {label}
                                  </a>
@@ -120,8 +117,8 @@ const Footer = () => {
                     />
                 </a>
 
-                <p className="text-zinc-500 text-sm" reveal-up>
-                    &copy; 2025 <span className="text-zinc-200">SiyaJariwala</span>
+                <p className="text-zinc-800 text-sm" reveal-up>
+                    &copy; 2025 <span className="text-zinc-800">SiyaJariwala</span>
                 </p>
             </div>
         </div>

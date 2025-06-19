@@ -6,7 +6,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-@apply bg-zinc-900  text-zinc-50 
+@apply bg-zinc-100 text-slate-900
 }
 
 .material-symbols-rounded{
@@ -23,10 +23,8 @@ backdrop-blur-2xl hover:bg-zinc-50/15 transition-[transform,background-color] ac
 
 }
 .navbar{
-@apply absolute top-full right-0 mt-2 min-w-40 p-2 bg-zinc-50/10 rounded-2xl
-    ring-inset ring-1 ring-zinc-50/5 scale-90 isolate blur-sm opacity-0 invisible transition-[opacity,transform,filter]
-md:static md:flex md:items-center md:mt-0 md:opacity-100 md:blur-0 md:visible md:scale-100 backdrop:blur-2xl
-
+ @apply fixed top-0 left-0 h-full w-[20%] p-6 flex flex-col gap-4
+         bg-slate-950 text-white z-50;
 }
 
 .navbar.active{
@@ -34,8 +32,9 @@ md:static md:flex md:items-center md:mt-0 md:opacity-100 md:blur-0 md:visible md
 }
 
 .nav-link{
-    @apply grid items-center h-9 px-4 text-sm font-medium
-    tracking-wide text-zinc-50/50 hover:text-zinc-50 transition-colors
+     @apply px-4 py-2 text-lg font-medium tracking-wide 
+         text-zinc-100 hover:text-pink-400 transition-colors duration-200;
+   
 }
 
 .nav-link.active{
@@ -51,7 +50,7 @@ md:static md:flex md:items-center md:mt-0 md:opacity-100 md:blur-0 md:visible md
 }
 
 .btn-secondary{
-    @apply bg-zinc-50 text-zinc-900 active:bg-zinc-50/80
+    @apply  bg-white text-gray-600 hover:bg-orange-100 active:bg-slate-700 
 }
 
 
@@ -64,14 +63,14 @@ md:static md:flex md:items-center md:mt-0 md:opacity-100 md:blur-0 md:visible md
 }
 
 .btn-primary{
-    @apply h-11 bg-sky-400 text-zinc-950 hover:bg-sky-300 active:bg-sky-400
+  @apply h-11 bg-slate-950 text-white hover:bg-orange-800 active:bg-slate-700
 }
 
 .btn-outline{
-    @apply h-11 bg-zinc-800 hover:bg-zinc-700 active:bg-zinc-800
+    @apply h-11  bg-slate-950 text-white hover:bg-orange-800 active:bg-slate-700
 }
 .container{
-    @apply px-4 mx-auto lg:px-8 xl:max-w-6xl;
+    @apply px-4 w-full ;
 }
 
 .img-box{
@@ -88,7 +87,8 @@ md:static md:flex md:items-center md:mt-0 md:opacity-100 md:blur-0 md:visible md
 
 .headline-1{
     @apply max-w-max;
-    background: -webkit-linear-gradient(0deg,#fafafa,#a1a1aa);
+    
+    background: -webkit-linear-gradient(0deg,#0d062a,#0a0612);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -106,17 +106,52 @@ md:static md:flex md:items-center md:mt-0 md:opacity-100 md:blur-0 md:visible md
  }
 
  .label{
-    @apply block text-zinc-200 text-sm font-normal mb-2
+    @apply block text-slate-900 text-xl font-bold font-normal mb-2
  }
 
  .text-field{
-    @apply block outline-none w-full px-3 py-3 text-sm bg-zinc-800 rounded-xl ring-1 ring-inset ring-transparent transition-shadow hover:ring-zinc-50/5 focus:ring-sky-400 focus:ring-2
+    @apply block outline-none w-full px-3 py-3 text-sm bg-gray-800 rounded-xl ring-1 ring-inset ring-transparent transition-shadow hover:ring-zinc-50/5 focus:ring-sky-400 focus:ring-2
  }
 
  .text-field::placeholder{
-    @apply text-zinc-400
+    @apply text-yellow-500
  }
 .reveal-up{
     @apply translate-y-20 opacity-0
 }
- 
+ .perspective {
+  perspective: 1000px;
+}
+
+.transform-style {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+.img-fluid{
+   max-width: 100%;
+   height: auto;
+}
+.reveal-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-up.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delays for multiple cards */
+.reveal-up:nth-child(1) { transition-delay: 0ms; }
+.reveal-up:nth-child(2) { transition-delay: 100ms; }
+.reveal-up:nth-child(3) { transition-delay: 200ms; }
+.reveal-up:nth-child(4) { transition-delay: 300ms; }
+.reveal-up:nth-child(5) { transition-delay: 400ms; }
