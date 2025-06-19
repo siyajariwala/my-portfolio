@@ -1,8 +1,12 @@
-import { useState } from "react";
+import { useState ,useEffect} from "react";
 import Navbar from "./Navbar";
 
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
+ // 🔒 Lock scroll when mobile nav is open
+  useEffect(() => {
+    document.body.style.overflow = navOpen ? 'hidden' : 'auto';
+  }, [navOpen]);
 
   return (
     <>

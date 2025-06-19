@@ -57,7 +57,7 @@ const App = () => {
   return (
     <ReactLenis root>
       <Header />
-      <main>
+      <main className="overflow-x-hidden">
         <section id="home">
           <Hero />
         </section>

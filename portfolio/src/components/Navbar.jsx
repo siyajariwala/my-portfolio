@@ -82,7 +82,7 @@ activeBox.current.style.height=event.target.offsetHeight +'px';
 
 
   return (
-    <nav className={'navbar ' + (navOpen ? 'active' : '')}>
+ <nav className={'navbar ' + (navOpen ? 'active' : '')}>
       <div className="flex flex-col justify-between items-center mt-20 mb-10">
     <img
       src="/images/profile.webp"

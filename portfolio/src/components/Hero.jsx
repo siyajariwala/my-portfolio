@@ -32,8 +32,8 @@ const Hero = () => {
       id="home"
       className="min-h-screen pt-28 lg:pt-36 bg-white"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[calc(100vh-7rem)] lg:min-h-[calc(100vh-9rem)]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:pl-20">
+        <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-8 lg:gap-12 items-center min-h-[calc(100vh-7rem)] lg:min-h-[cal(100vh-9rem)]">
           
           {/* Left Column - Content */}
           <div className="order-2 lg:order-1 space-y-8">
@@ -90,7 +90,7 @@ const Hero = () => {
 
           {/* Right Column - Image */}
           <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-md lg:max-w-lg">
+            <div className="relative w-full max-w-[280px] sm:max-w-sm md:max-w-md lg:max-w-lg mx-auto">
               <div className="aspect-[4/5] bg-gradient-to-t from-green-950 via-green-950/40 to-transparent rounded-[3rem] overflow-hidden shadow-2xl">
                 <img 
                   src="/images/banner.jpg"
