@@ -8,6 +8,12 @@ const works = [
     tags: ['HTML', 'CSS', 'Javascript'],
     projectLink: 'https://github.com/siyajariwala/piano-tiles-game.git'
   },
+    {
+    imgSrc: '/images/wise-connect.png',
+    title: 'WISE CONNECT',
+    tags: ['MongoDB', 'Express.js', 'React.js','Node.js'],
+    projectLink: 'https://github.com/siyajariwala/WISE-CONNECT.git'
+  },
 ];
 
 const Work = () => {
