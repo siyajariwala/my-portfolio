@@ -75,7 +75,7 @@ const Hero = () => {
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <ButtonPrimary  
-                href="/resume/Siya_Jariwala_Resume (2) (1) (1) (4).pdf"
+                href="/resume/Siya_Jariwala_Resume (2) (1) (1) (5).pdff"
                 label="View Resume"
                 icon="visibility"
                 target="_blank"
