@@ -14,6 +14,12 @@ const works = [
     tags: ['MongoDB', 'Express.js', 'React.js','Node.js'],
     projectLink: 'https://github.com/siyajariwala/WISE-CONNECT.git'
   },
+  {
+    imgSrc: '/images/my-portfolio.png',
+    title: 'My Portfolio',
+    tags: ['Tailwind CSS', 'React.js'],
+    projectLink: 'https://github.com/siyajariwala/my-portfolio.git'
+  },
 ];
 
 const Work = () => {
